@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="authot" content="Gualter dos Santos">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, 
+        Gualter dos Santos, Keyword summary of the page content">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>WDD 131 – Dynamic Web Fundamentals – Gualter dos Santos</title>
 </head>
+
 <body>
-    <h1>Hello Gualter</h1>
+    <header>
+        <div><span id="course-title">WDD 131: Dynamic Web Fundamentals - <span class="my-name">Gualter</span> </span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/gualter-santos-891a931b8/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gualter dos Santos</h1>
+        <div class="cards">
+            <section class="card">
+                <h1>About my self</h1>
+
+                <div class="section-content">
+                    <img src="images/profile.jpeg" alt="">
+                    <p>My name is Gualter dos Santos I graduated in computer Engenering, I am based in Luanda - Angola,
+                        I am
+                        merried
+                        and I have two children a girl and a boy, My daughter is 3 years old and my sun is 6 months old.
+                    </p>
+                    <img src="" alt="">
+                </div>
+
+                <hr>
+
+                <h1>About my country</h1>
+
+                <div class="section-content">
+                    <img src="images/Angola.svg" alt="">
+                    <p>My name is Gualter dos Santos I graduated in computer Engenering, I am based in Luanda - Angola,
+                        I am
+                        merried
+                        and I have two children a girl and a boy, My daughter is 3 years old and my sun is 6 months old.
+                    </p>
+                </div>
+
+            </section>
+            <section class="card">
+                <h1>Web Dev Resources</h1>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> - Documentation for
+                        HTML, CSS, and JavaScript.</li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - Tutorials and references on
+                        web development.</li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> - Tips, guides, and examples
+                        for modern CSS.</li>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> - Q&A platform for
+                        programming and web development issues.</li>
+                    <li><a href="https://freecodecamp.org/" target="_blank">freeCodeCamp</a> - Free coding tutorials and
+                        projects.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gualter Santos | Luanda - Angola</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
+
 </html>
