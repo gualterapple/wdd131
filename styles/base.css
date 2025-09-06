@@ -42,16 +42,16 @@ a {
 }
 
 .cards {
-  display: flex;
-  gap: .5rem;
+    display: flex;
+    gap: .5rem;
 }
 
 .cards .card:first-child {
-  flex: 0 0 65%;
+    flex: 0 0 65%;
 }
 
 .cards .card:last-child {
-  flex: 0 0 25%;
+    flex: 0 0 25%;
 }
 
 .card {
@@ -69,7 +69,7 @@ a {
     gap: 50px;
 }
 
-.section-content1{
+.section-content1 {
     /*max-width: 600px;*/
 }
 
@@ -89,6 +89,11 @@ nav ul {
 nav ul li a {
     font-weight: bold;
     color: black;
+}
+
+nav ul li a:hover {
+    color: #006eb6;
+    text-decoration: underline;
 }
 
 img {
