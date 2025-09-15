@@ -1,0 +1,39 @@
+@media (min-width: 513px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main{
+        padding: 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 colunas iguais */
+        gap: 1rem;
+        /* espaçamento entre itens */
+        justify-items: center;
+        /* centraliza cada figure */
+    }
+
+    .gallery figure {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        list-style: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}
