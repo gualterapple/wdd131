@@ -2,6 +2,14 @@
     --bg-color: #ea7373;
 }
 
+section {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 h1 {
     background-color: var(--bg-color);
 }
@@ -75,6 +83,7 @@ picture img {
     .data,
     .weather {
         width: 25%;
+
     }
 }
 
@@ -97,6 +106,35 @@ picture img {
     .weather-icon-mobile {
         display: none;
     }
+
+    main {
+        position: relative;
+    }
+
+    .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .info h2 {
+        background-color: var(--bg-color);
+    }
+
+    .data,
+    .weather {
+        text-align: center;
+        background-color: white;
+        max-height: 16rem;
+    }
+
+    .weather {
+        margin-top: 14rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -110,4 +148,5 @@ picture img {
 footer {
     background-color: var(--bg-color);
     padding: 1rem;
+    text-align: center;
 }
