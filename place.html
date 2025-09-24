@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Country Page</title>
+    <meta name="description" content="Media query learning activity example page.">
+    <meta name="author" content="Gualter dos Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kyoto, Japan</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/kyoto-large.webp">
+            <source media="(min-width: 500px)" srcset="images/kyoto-small.webp">
+            <img src="images/kyoto-small.webp" alt="View of Kyoto temples">
+        </picture>
+
+        <section class="info">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span>Country:</span> Japan</li>
+                    <li><span>Region:</span> Kansai</li>
+                    <li><span>Population:</span> 1.46 million</li>
+                    <li><span>Language:</span> Japanese</li>
+                    <li><span>Currency:</span> Yen (¥)</li>
+                    <li><span>Famous for:</span> Temples & Geisha</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2 class="weather-heading">Weather</h2>
+
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+
+                <ul>
+                    <li><span>Temperature:</span> <span id="temp">28°C</span></li>
+                    <li><span>Condition:</span> Sunny</li>
+                    <li><span>Humidity:</span> 65%</li>
+                    <li><span>Wind:</span> 12 km/h</li>
+                    <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> by Gualter Santos | Kyoto, Japan</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

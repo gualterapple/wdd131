@@ -1,0 +1,151 @@
+:root {
+    --bg-color: #ea7373;
+}
+
+section {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1 {
+    background-color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.data,
+.weather {
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.data h2,
+.weather h2 {
+    margin-bottom: 0.5rem;
+}
+
+.data ul,
+.weather ul {
+    list-style: none;
+}
+
+.data li,
+.weather li {
+    margin: 0.3rem 0;
+}
+
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .data,
+    .weather {
+        width: 25%;
+
+    }
+}
+
+
+
+.weather-icon-mobile {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+
+    .weather-heading::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .info h2 {
+        background-color: var(--bg-color);
+    }
+
+    .data,
+    .weather {
+        text-align: center;
+        background-color: white;
+        max-height: 16rem;
+    }
+
+    .weather {
+        margin-top: 14rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .data,
+    .weather {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: var(--bg-color);
+    padding: 1rem;
+    text-align: center;
+}
