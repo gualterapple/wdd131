@@ -47,7 +47,6 @@ picture img {
 
 .data,
 .weather {
-    border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 6px;
 }
