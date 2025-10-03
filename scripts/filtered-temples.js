@@ -98,10 +98,9 @@ const temples = [
     },
 ];
 
-// função para renderizar os cards
 function displayTemples(templesArray) {
     const gallery = document.querySelector(".gallery");
-    gallery.innerHTML = ""; // limpa antes de renderizar
+    gallery.innerHTML = "";
 
     templesArray.forEach(temple => {
         const card = document.createElement("div");
