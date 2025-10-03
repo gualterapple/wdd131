@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 250px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+@media (max-width: 512px) {
+    main {
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .open a {
+        display: block;
+    }
+
+}
+
+h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+header {
+    background: #006eb6;
+    padding: 1rem;
+    color: white;
+
+}
+
+header a {
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background: #b1b1b1;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.temple-card {
+    text-align: center;
+    background: #cecece;
+    padding: 2rem;
+    border-radius: 5px;
+}
