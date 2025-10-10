@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gualter dos Santos" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+        <p>Please fill out the form below to share your experience.</p>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">&#9733;</label>
+                </div>
+            </fieldset>
+
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required />
+
+            <fieldset>
+                <legend>Useful Features (select all that apply):</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Easy Setup"> Easy Setup</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Durable"> Durable</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Affordable"> Affordable</label>
+                <label><input type="checkbox" id="feature4" name="features" value="High Performance"> High
+                    Performance</label>
+            </fieldset>
+
+            <label for="reviewText">Written Review (optional):</label>
+            <textarea id="reviewText" name="reviewText" rows="4" cols="50"
+                placeholder="Write your review here..."></textarea>
+
+            <label for="userName">Your Name (optional):</label>
+            <input type="text" id="userName" name="userName" placeholder="Enter your name" />
+
+            <input type="submit" value="Submit Review" />
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Product Review Portal | Gualter dos Santos</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
