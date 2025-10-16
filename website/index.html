@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Gualter dos Santos" />
+    <meta name="description" content="Book Haven - Online Bookstore" />
+    <title>Book Haven — Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="info">Free shipping on orders over $50!</div>
+        <nav class="navbar">
+            <div class="logo">📚 Book Haven</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="images/banner.jpg" alt="Book Haven Banner" loading="lazy">
+    </section>
+
+    <section class="categories">
+        <button onclick="filterBooks('all')">All</button>
+        <button onclick="filterBooks('self-help')">Self-help</button>
+        <button onclick="filterBooks('bibles')">Bibles</button>
+        <button onclick="filterBooks('business')">Business</button>
+        <button onclick="filterBooks('academic')">Academic</button>
+        <button onclick="filterBooks('family')">Family</button>
+        <button onclick="filterBooks('leadership')">Leadership</button>
+    </section>
+
+    <main class="books">
+        <div class="book" data-category="self-help">
+            <img src="images/book1.jpg" alt="Book 1" loading="lazy">
+            <h3>The Power Within</h3>
+            <p>Discover your inner strength with this inspiring read.</p>
+        </div>
+        <div class="book" data-category="academic">
+            <img src="images/book2.jpg" alt="Book 2" loading="lazy">
+            <h3>Holy Bible</h3>
+            <p>A timeless spiritual guide for every believer.</p>
+        </div>
+        <div class="book" data-category="business">
+            <img src="images/book3.jpg" alt="Book 3" loading="lazy">
+            <h3>Smart Business</h3>
+            <p>Learn modern strategies for successful entrepreneurship.</p>
+        </div>
+        <div class="book" data-category="bibles">
+            <img src="images/book4.jpg" alt="Book 4" loading="lazy">
+            <h3>History of Science</h3>
+            <p>An exploration of key scientific discoveries.</p>
+        </div>
+        <div class="book" data-category="family">
+            <img src="images/book5.jpg" alt="Book 5" loading="lazy">
+            <h3>Building Strong Families</h3>
+            <p>Practical advice for family growth and harmony.</p>
+        </div>
+        <div class="book" data-category="leadership">
+            <img src="images/book6.jpg" alt="Book 6" loading="lazy">
+            <h3>Lead with Purpose</h3>
+            <p>Develop leadership skills to inspire others.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Book Haven | By Gualter dos Santos</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
